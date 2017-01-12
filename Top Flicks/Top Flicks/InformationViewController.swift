@@ -10,6 +10,11 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
+    @IBOutlet weak var posterView: UIImageView!
+    @IBOutlet weak var textBox: UILabel!
+    @IBOutlet weak var titleView: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +25,12 @@ class InformationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    
     
 
     /*

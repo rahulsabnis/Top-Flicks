@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DFDDB6501E205228007B4178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDB64F1E205228007B4178 /* AppDelegate.swift */; };
-		DFDDB6521E205228007B4178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDB6511E205228007B4178 /* ViewController.swift */; };
 		DFDDB6551E205228007B4178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDDB6531E205228007B4178 /* Main.storyboard */; };
 		DFDDB6571E205228007B4178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFDDB6561E205228007B4178 /* Assets.xcassets */; };
 		DFDDB65A1E205228007B4178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDDB6581E205228007B4178 /* LaunchScreen.storyboard */; };
+		DFDDB6641E20577D007B4178 /* FlicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDB6631E20577D007B4178 /* FlicksViewController.swift */; };
+		DFDDB6671E20660C007B4178 /* FlickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDB6661E20660C007B4178 /* FlickCell.swift */; };
+		EC3CD0B7817B82F771A7B762 /* Pods_Top_Flicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A73946D809233734316846B /* Pods_Top_Flicks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		062A2BEE8B7B431040DD7017 /* Pods-Top Flicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Flicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Top Flicks/Pods-Top Flicks.debug.xcconfig"; sourceTree = "<group>"; };
+		6A73946D809233734316846B /* Pods_Top_Flicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Top_Flicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA4F0AEDBA2D354236E4DB4 /* Pods-Top Flicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Top Flicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Top Flicks/Pods-Top Flicks.release.xcconfig"; sourceTree = "<group>"; };
 		DFDDB64C1E205228007B4178 /* Top Flicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Top Flicks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDDB64F1E205228007B4178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFDDB6511E205228007B4178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DFDDB6541E205228007B4178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFDDB6561E205228007B4178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFDDB6591E205228007B4178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFDDB65B1E205228007B4178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFDDB6631E20577D007B4178 /* FlicksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlicksViewController.swift; sourceTree = "<group>"; };
+		DFDDB6661E20660C007B4178 /* FlickCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3CD0B7817B82F771A7B762 /* Pods_Top_Flicks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		394E78B270846A14F4D2A0D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				062A2BEE8B7B431040DD7017 /* Pods-Top Flicks.debug.xcconfig */,
+				8EA4F0AEDBA2D354236E4DB4 /* Pods-Top Flicks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9FBA46260DD37E988A2DFD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A73946D809233734316846B /* Pods_Top_Flicks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DFDDB6431E205228007B4178 = {
 			isa = PBXGroup;
 			children = (
 				DFDDB64E1E205228007B4178 /* Top Flicks */,
 				DFDDB64D1E205228007B4178 /* Products */,
+				394E78B270846A14F4D2A0D6 /* Pods */,
+				D9FBA46260DD37E988A2DFD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,31 @@
 		DFDDB64E1E205228007B4178 /* Top Flicks */ = {
 			isa = PBXGroup;
 			children = (
+				DFDDB6681E206624007B4178 /* View Controllers */,
+				DFDDB6651E2065AC007B4178 /* Views */,
 				DFDDB64F1E205228007B4178 /* AppDelegate.swift */,
-				DFDDB6511E205228007B4178 /* ViewController.swift */,
 				DFDDB6531E205228007B4178 /* Main.storyboard */,
 				DFDDB6561E205228007B4178 /* Assets.xcassets */,
 				DFDDB6581E205228007B4178 /* LaunchScreen.storyboard */,
 				DFDDB65B1E205228007B4178 /* Info.plist */,
 			);
 			path = "Top Flicks";
+			sourceTree = "<group>";
+		};
+		DFDDB6651E2065AC007B4178 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFDDB6661E20660C007B4178 /* FlickCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DFDDB6681E206624007B4178 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFDDB6631E20577D007B4178 /* FlicksViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFDDB65E1E205228007B4178 /* Build configuration list for PBXNativeTarget "Top Flicks" */;
 			buildPhases = (
+				334AB702C9C31CFB2CDB317B /* [CP] Check Pods Manifest.lock */,
 				DFDDB6481E205228007B4178 /* Sources */,
 				DFDDB6491E205228007B4178 /* Frameworks */,
 				DFDDB64A1E205228007B4178 /* Resources */,
+				4E4D221919929B0F6FAEB53C /* [CP] Embed Pods Frameworks */,
+				8D1D6915E778BAF0C9A8E5D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +178,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		334AB702C9C31CFB2CDB317B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E4D221919929B0F6FAEB53C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Top Flicks/Pods-Top Flicks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1D6915E778BAF0C9A8E5D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Top Flicks/Pods-Top Flicks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFDDB6481E205228007B4178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFDDB6521E205228007B4178 /* ViewController.swift in Sources */,
+				DFDDB6641E20577D007B4178 /* FlicksViewController.swift in Sources */,
+				DFDDB6671E20660C007B4178 /* FlickCell.swift in Sources */,
 				DFDDB6501E205228007B4178 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +352,7 @@
 		};
 		DFDDB65F1E205228007B4178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062A2BEE8B7B431040DD7017 /* Pods-Top Flicks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BC5SRTE39;
@@ -270,6 +366,7 @@
 		};
 		DFDDB6601E205228007B4178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA4F0AEDBA2D354236E4DB4 /* Pods-Top Flicks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8BC5SRTE39;
@@ -300,6 +397,7 @@
 				DFDDB6601E205228007B4178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
