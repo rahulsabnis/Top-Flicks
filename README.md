@@ -2,6 +2,11 @@
 
 Flicks is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
+## How to Run
+
+1. Open up Top Flicks.xcworkspace
+2. Run the app on your phone or a simulator
+
 Time spent: **5** hours spent in total
 
 ## User Stories
